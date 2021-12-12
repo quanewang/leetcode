@@ -34,16 +34,13 @@ class Solution(object):
         n1 = (len(nums1) + len(nums2)) // 2
         if (len(nums1) + len(nums2)) % 2 ==0:
             r1 = self.findMedianSortedArraysHelper(nums1, nums2, 0, len(nums1)-1, 0, len(nums2)-1, n1)
-            print("n1 r1", n1, r1)
             n2 = n1 - 1
             r2 = self.findMedianSortedArraysHelper(nums1, nums2, 0, len(nums1)-1, 0, len(nums2)-1, n2)
-            print("n2 r2: ", n2, r2)
             return (r1+r2)/2
         else:
             return self.findMedianSortedArraysHelper(nums1, nums2, 0, len(nums1)-1, 0, len(nums2), n1)
 
     def findMedianSortedArraysHelper(self, nums1, nums2, l1, r1, l2, r2, n):
-        print("findMedianSortedArraysHelper", nums1, nums2, l1, r1, l2, r2, n)
         if r1<0 or r1<l1:
             return nums2[l2 + n]
         elif r2<0 or r2<l2:
