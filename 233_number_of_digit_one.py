@@ -36,3 +36,6 @@ def one(num):
 
 print(one(13))
 print(one(99))
+print(one(6789))
+print(one(6189))
+print(one(6089))

@@ -1,26 +1,5 @@
-"""
-2 8 5 3 9 1
+a="time awscurl -X POST http://internal-EcsSe-LoadB-1382OGLD5RPJB-1541769330.us-west-2.elb.amazonaws.com/ -d '{ \"Operation\": \"com.amazon.quanwanecspoc3#CreateBeer\",  \"Service\": \"com.amazon.quanwanecspoc3#QuanwanEcsPoc3\",  \"Input\": { \"Beer\":{\"beerId\": \"beerid6\", \"name\": \"name6\"}  }  }'"
+a="time awscurl -X POST http://internal-EcsSe-LoadB-1382OGLD5RPJB-1541769330.us-west-2.elb.amazonaws.com/ -d '{     \"Operation\": \"com.amazon.quanwanecspoc3#GetAllBeers\",     \"Service\": \"com.amazon.quanwanecspoc3#QuanwanEcsPoc3\",     \"Input\": {     } }'"
 
-ith node
-* children: 2i+1, 2i+2
-* parent: (i-1)//2
-
-"""
-
-
-def heapify(a):
-    for i in range(len(a)-1, 0, -1):
-        for j in range(i, 0, -1):
-            k = (j-1)//2
-            if a[k]<a[j]:
-                swap(a, k, j)
-        swap(a, 0, i)
-    return a
-
-
-def swap(a, i, j):
-    tmp = a[i]
-    a[i] = a[j]
-    a[j] = tmp
-
-print(heapify([2, 8, 5, 3, 9, 1]))
+for i in range(1, 100):
+  print(a)

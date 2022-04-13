@@ -44,4 +44,7 @@ def check(items, total, picked):
         return -1
     elif abs(total) < EPS:
         return 0
-    else return 1
+
+
+print([0] * 5)
+print([[0]*5]*5)
