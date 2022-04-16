@@ -13,4 +13,6 @@ problems
 * https://leetcode.com/problemset/all/?difficulty=HARD&page=1
 * https://www.careercup.com/page?pid=google-interview-questions
 
- git add .; git commit -m . -a;git push origin
+git add .; git commit -m . -a;git push origin
+
+git remote set-url origin git@github.com:quanewang/leetcode.git
